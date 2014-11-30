@@ -71,13 +71,6 @@ namespace XamarinUnityResolution
 
             // ViewModel をインスタンス化するデフォルトメソッドを指定します
             ViewModelLocationProvider.SetDefaultViewModelFactory((type) => Container.Resolve(type));
-
-            // 画面遷移サービスの生成方法を注入します
-            Container.RegisterType<INavigationService, NavigationService>(new ContainerControlledLifetimeManager());
-
-            // Page クラスの生成に UnityContainer を使います
-            NavigationService.SetPageFactiory(type => Container.Resolve(type));
-            NavigationService.SetRootPage(new NavigationPage(new TopPage()));
         }
 
         /// <summary>
@@ -86,7 +79,7 @@ namespace XamarinUnityResolution
         /// <returns>メイン画面</returns>
         public static Page GetMainPage()
         {
-            return NavigationService.RootPage;
+            return new TopPage();
         }
     }
 }

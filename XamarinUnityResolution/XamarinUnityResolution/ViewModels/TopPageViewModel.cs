@@ -38,11 +38,6 @@ namespace XamarinUnityResolution.ViewModels
         private ILogger logger;
 
         /// <summary>
-        /// 画面遷移サービス
-        /// </summary>
-        private INavigationService navigationService;
-
-        /// <summary>
         /// リポジトリ
         /// </summary>
         private IPhotoRepository repository;
@@ -102,15 +97,12 @@ namespace XamarinUnityResolution.ViewModels
         /// コンストラクタ
         /// </summary>
         /// <param name="logger">ログ出力サービス（DI コンテナにより自動注入される）</param>
-        /// <param name="navigationService">画面遷移サービス（DI コンテナにより自動注入される）</param>
         /// <param name="repository">リポジトリ（DI コンテナにより自動注入される）</param>
         /// <param name="speechService">文字列読み上げサービス（DI コンテナにより自動注入される）</param>
-        public TopPageViewModel(ILogger logger, INavigationService navigationService, IPhotoRepository repository, ITextSpeechService speechService)
+        public TopPageViewModel(ILogger logger, IPhotoRepository repository, ITextSpeechService speechService)
         {
             this.logger = logger;
             this.logger.WriteLog("ctor");
-
-            this.navigationService = navigationService;
 
             this.repository = repository;
             this.repository.Load();

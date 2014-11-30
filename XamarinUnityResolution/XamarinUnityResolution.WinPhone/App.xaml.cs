@@ -10,7 +10,6 @@ using Microsoft.Practices.Prism.PubSubEvents;
 using Microsoft.Practices.Unity;
 using Prism.Xamarin.Events;
 using XamarinUnityResolution.Services;
-using XamarinUnityResolution.WinPhone.Events;
 using XamarinUnityResolution.WinPhone.Resources;
 using XamarinUnityResolution.WinPhone.Services;
 
@@ -82,8 +81,6 @@ namespace XamarinUnityResolution.WinPhone
         /// <param name="e">イベント引数</param>
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
-            XamarinUnityResolution.App.Container.Resolve<IEventAggregator>().GetEvent<AppStateChangedEvent>()
-                .Publish(new ChangedAppStatePhone(AppStatePhone.Running));
         }
 
         /// <summary>
@@ -93,8 +90,6 @@ namespace XamarinUnityResolution.WinPhone
         /// <param name="e">イベント引数</param>
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
-            XamarinUnityResolution.App.Container.Resolve<IEventAggregator>().GetEvent<AppStateChangedEvent>()
-                .Publish(new ChangedAppStatePhone(AppStatePhone.Dormant));
         }
 
         // Code to execute when the application is closing (eg, user hit Back)

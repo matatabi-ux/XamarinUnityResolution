@@ -69,7 +69,7 @@ namespace XamarinUnityResolution.Test
             {
                 var logger = new TestLogger();
                 var repository = new PhotoRepository();
-                var target = new TopPageViewModel(logger, null, repository, null);
+                var target = new TopPageViewModel(logger, repository, null);
 
                 // ログ出力確認
                 Assert.IsTrue(logger.LoggedList.First().EndsWith(@"\TopPageViewModel.cs .ctor ctor"));

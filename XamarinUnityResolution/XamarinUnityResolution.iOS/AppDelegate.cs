@@ -7,7 +7,6 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Prism.Xamarin.Events;
 using Xamarin.Forms;
-using XamarinUnityResolution.iOS.Events;
 
 namespace XamarinUnityResolution.iOS
 {
@@ -39,26 +38,6 @@ namespace XamarinUnityResolution.iOS
             window.MakeKeyAndVisible();
 
             return true;
-        }
-
-        /// <summary>
-        /// Active に移行した際の処理
-        /// </summary>
-        /// <param name="application">アプリケーションクラス</param>
-        public override void WillEnterForeground(UIApplication application)
-        {
-            App.Container.Resolve<IEventAggregator>().GetEvent<AppStateChangedEvent>()
-                .Publish(new ChangedAppStateIOS(AppStateIOS.Active));
-        }
-
-        /// <summary>
-        /// Backgroud に移行した際の処理
-        /// </summary>
-        /// <param name="application">アプリケーションクラス</param>
-        public override void DidEnterBackground(UIApplication application)
-        {
-            App.Container.Resolve<IEventAggregator>().GetEvent<AppStateChangedEvent>()
-                .Publish(new ChangedAppStateIOS(AppStateIOS.Background));
         }
     }
 }
