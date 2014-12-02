@@ -63,10 +63,6 @@
       <Project>{0fb574f7-7042-428f-aa56-196fd83120f8}</Project>
       <Name>Prism.SharedInterfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Prism.Xamarin\Prism.Xamarin.csproj">
-      <Project>{668756dc-1c2b-4ed7-8978-1ae580095e92}</Project>
-      <Name>Prism.Xamarin</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Practices.Prism.PubSubEvents">

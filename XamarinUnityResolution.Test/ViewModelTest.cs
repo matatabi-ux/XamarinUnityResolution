@@ -9,7 +9,6 @@
 using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.Practices.Unity;
 using XamarinUnityResolution.Models;
 using XamarinUnityResolution.Services;
 using XamarinUnityResolution.ViewModels;

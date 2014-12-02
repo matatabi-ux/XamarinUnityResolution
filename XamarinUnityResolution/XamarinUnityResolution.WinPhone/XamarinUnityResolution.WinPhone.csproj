@@ -159,10 +159,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Prism.Xamarin\Prism.Xamarin.csproj">
-      <Project>{668756dc-1c2b-4ed7-8978-1ae580095e92}</Project>
-      <Name>Prism.Xamarin</Name>
-    </ProjectReference>
     <ProjectReference Include="..\XamarinUnityResolution\XamarinUnityResolution.csproj">
       <Name>XamarinUnityResolution</Name>
     </ProjectReference>

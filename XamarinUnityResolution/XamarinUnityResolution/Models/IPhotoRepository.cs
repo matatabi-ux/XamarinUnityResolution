@@ -1,4 +1,12 @@
-﻿using System;
+﻿#region License
+//-----------------------------------------------------------------------
+// <copyright>
+//     Copyright matatabi-ux 2014.
+// </copyright>
+//-----------------------------------------------------------------------
+#endregion
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

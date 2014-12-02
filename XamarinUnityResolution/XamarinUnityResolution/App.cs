@@ -6,19 +6,17 @@
 //-----------------------------------------------------------------------
 #endregion
 
-using Microsoft.Practices.Prism.Mvvm;
-using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Practices.Prism.Mvvm;
+using Microsoft.Practices.Unity;
 using Prism.Mvvm;
-using Prism.Mvvm.Interfaces;
 using Xamarin.Forms;
 using XamarinUnityResolution.Models;
 using XamarinUnityResolution.Services;
 using XamarinUnityResolution.Views;
-using Microsoft.Practices.Prism.PubSubEvents;
 
 namespace XamarinUnityResolution
 {
@@ -62,9 +60,6 @@ namespace XamarinUnityResolution
         {
             // ログ出力サービスを DI コンテナに登録
             Container.RegisterType<ILogger, Logger>(new ContainerControlledLifetimeManager());
-
-            // EventAggregator の生成に UnityContainer を使います
-            Container.RegisterType<IEventAggregator, EventAggregator>(new ContainerControlledLifetimeManager());
 
             // Model を DI コンテナに登録
             Container.RegisterType<IPhotoRepository, PhotoRepository>(new ContainerControlledLifetimeManager());

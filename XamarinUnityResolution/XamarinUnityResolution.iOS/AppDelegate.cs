@@ -5,7 +5,6 @@ using Microsoft.Practices.Prism.PubSubEvents;
 using Microsoft.Practices.Unity;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using Prism.Xamarin.Events;
 using Xamarin.Forms;
 
 namespace XamarinUnityResolution.iOS

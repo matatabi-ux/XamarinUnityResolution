@@ -15,8 +15,6 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Practices.Prism.Mvvm;
 using Microsoft.Practices.Unity;
-using Prism.Mvvm.Interfaces;
-using Prism.Xamarin.ViewModels;
 using Xamarin.Forms;
 using XamarinUnityResolution.Models;
 using XamarinUnityResolution.Services;
@@ -28,7 +26,7 @@ namespace XamarinUnityResolution.ViewModels
     /// <summary>
     /// 最初の画面の ViewModel
     /// </summary>
-    public class TopPageViewModel : ViewModelBase
+    public class TopPageViewModel : BindableBase
     {
         #region Privates
 
