@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>Unity Resolution</string>
+	<string>Resolution Test</string>
 	<key>CFBundleIdentifier</key>
 	<string>matatabi-ux.XamarinUnityResolution</string>
 	<key>CFBundleVersion</key>

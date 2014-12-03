@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{589b259d-3c2f-4ae8-9063-e593bdbd24d7}" Title="Unity Resolution" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="matatabi-ux" Description="Unity Resolution by Xamarin" Publisher="XamarinUnityResolution.WinPhone" PublisherID="{a5f3e7af-7d0f-456c-8233-c57394125d0c}">
+  <App xmlns="" ProductID="{589b259d-3c2f-4ae8-9063-e593bdbd24d7}" Title="Resolution Test" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="matatabi-ux" Description="Unity Resolution by Xamarin" Publisher="matatabi-ux" PublisherID="{a5f3e7af-7d0f-456c-8233-c57394125d0c}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
